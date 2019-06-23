@@ -1,0 +1,40 @@
+* {
+  font-family: "vazir";
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding: 0px !important;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: center; }
+
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: auto;
+  font-size: 12px; }
+
+.banner {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 200px;
+  color: white; }
+
+.container, .row, .col-md-4, .col-md-6 {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+
+.footer {
+  background: #b3b3b3; }
+
+nav {
+  background-color: #4af2e5; }
+  nav ul {
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 20px; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li:hover {
+        background-color: rgba(0, 0, 0, 0.3); }
+      nav ul li a {
+        font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
