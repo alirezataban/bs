@@ -1,0 +1,29 @@
+// @for $i from 100px through 200px{
+//     .item-1{
+//         width: $i;
+//     }
+// }
+
+
+// $i:1;
+// @while $i<100 {
+//     .item-#{$i}{
+//         border: 1px solid black;
+//     }
+//     $i:$i+1;
+// }
+
+
+// @each $s in (static, flex , block , inline-block , grid , none) {
+//     .display-#{$s}{
+//         display: $s;
+//     }
+// }
+
+
+@each $name , $style , $size in((normal , bold , 10px),(emphasis , bold , 15px)){
+    .#{$name}{
+        font-weight: $style;
+        font-size: $size;
+    }
+}

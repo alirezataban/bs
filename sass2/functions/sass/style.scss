@@ -1,0 +1,17 @@
+@import "_functions.scss";
+@import "_vars.scss";
+div.demo{
+    width: grid-width(24);
+    background-color: #f2f2f2;
+}
+$state:true;
+@if($state){
+    div.demo{
+        background: $confirm-bg-color;
+    }
+}@else{
+    div.demo{
+        background: $cancel-bg-color;
+    }
+    
+}

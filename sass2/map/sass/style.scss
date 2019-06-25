@@ -1,0 +1,8 @@
+$red-map:(light: #e57373 , medium:#f2f2f2 , dark:#333);
+$size-map:(small:111 , medium:222 , larg:333);
+p{
+    color: map-get($red-map , light);
+}
+div{
+    width: map-get($size-map , medium );
+}

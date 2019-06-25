@@ -1,0 +1,6 @@
+@mixin border($border) {
+    border: $border;
+    -webkit-border:$border;
+    -moz-border:$border;
+    -ms-border:$border;
+}

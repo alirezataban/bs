@@ -1,0 +1,18 @@
+.message, .success, .error, .warning {
+  padding: 10px;
+  border: 1px solid black;
+  -webkit-border: 1px solid black;
+  -moz-border: 1px solid black;
+  -ms-border: 1px solid black;
+  color: #a3a3a3; }
+
+.success {
+  border-color: #2ecc71; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

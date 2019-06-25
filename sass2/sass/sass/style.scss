@@ -1,0 +1,19 @@
+@import "_vars.scss";
+@import "_mixin.scss";
+.message{
+    padding: $padding-value;
+    @include border(1px solid black);
+    color: $for-color;
+}
+.success{
+    @extend .message;
+    border-color: #2ecc71;
+}
+.error{
+    @extend .message;
+    border-color: red;
+}
+.warning{
+    @extend .message;
+    border-color: yellow;
+}
