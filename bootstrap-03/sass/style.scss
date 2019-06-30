@@ -1,0 +1,23 @@
+*{
+    direction: rtl;
+    font-family: vazir;
+}
+.jumbotron .container{
+    max-width: 40rem;
+}
+.jumbotron-heading{
+    font-weight: 300;
+}
+@media(min-width:768px){
+    .jumbotron{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+.card{
+   overflow: hidden;
+   border-radius: 3%;
+}
+.card-footer{
+    border-top-style:none;
+}
