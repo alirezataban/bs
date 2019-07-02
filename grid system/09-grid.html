@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        display: grid;
+        justify-content: center;
+        padding-top: 40px; 
+    }
+    .box{
+        background: #333;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        padding: 40px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'sidebar'
+        'content'
+        'sidebar2'
+        'footer'
+        ;
+        grid-gap: 10px;
+    }
+    @media(min-width:500px){
+        .grid-container{
+            grid-template-columns: 30% auto;
+            grid-template-areas: 
+            'header header'
+            'sidebar content'
+            'sidebar2 sidebar2'
+            'footer footer'
+            ;
+        }
+    }
+    @media(min-width:900px){
+        .grid-container{
+            grid-template-columns: 150px auto 150px;
+            grid-template-areas: 
+            'header header header'
+            'sidebar content sidebar2'
+            'footer footer footer'
+            ; 
+        }
+    }
+    .header{
+        grid-area: header;
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .content{
+        grid-area: content;
+    }
+    .sidebar2{
+        grid-area: sidebar2;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box header">header</div>
+        <div class="box sidebar">sidebar</div>
+        <div class="box content">content</div>
+        <div class="box sidebar2">sidebar2</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>

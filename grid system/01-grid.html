@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        display: grid;
+        justify-content: center;
+        padding: 40px;
+    }
+    .flex-container{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-gap: 10px;
+    }
+    .grid-item{
+        background: #333;
+        color: white;
+        padding: 40px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .grid-item-c{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="grid-item-a">a</div>
+        <div class="grid-item">b</div>
+        <div class="grid-item-c">c</div>
+        <div class="grid-item">d</div>
+        <div class="grid-item">e</div>
+        <div class="grid-item">f</div>
+    </div>
+</body>
+</html>

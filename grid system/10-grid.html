@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header header header header header header'
+        'left middle middle middle middle right'
+        'footer footer footer footer footer footer'
+        ;
+    }
+    @media(max-width:600px){
+        .grid-container{
+            grid-template-areas: 
+            'header header header header header header'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer'
+            ;
+        }
+    }
+    .left , .middle , .right{
+        padding: 10px;
+        height: 300px;
+    }
+    .header{
+        grid-area: header;
+        text-align: center;
+        background: #f1f1f1;
+        padding: 30px;
+        font-size: 2rem;
+    }
+    .left{
+        grid-area: left;
+        text-align: center;
+        background: #aaa;
+    }
+    .middle{
+        grid-area: middle;
+        text-align: center;
+        background: #bbb;
+    }
+    .right{
+        grid-area: right;
+        text-align: center;
+        background: #ccc;
+    }
+    .footer{
+        grid-area: footer;
+        text-align: center;
+        background: #f1f1f1;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header"><h2>header</h2></div>
+        <div class="left">left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+        <div class="footer"><p>footer</p></div>
+    </div>
+</body>
+</html>
