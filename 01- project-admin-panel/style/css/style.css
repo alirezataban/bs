@@ -1,0 +1,26 @@
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: Vazir;
+    font-weight: 300;
+}
+
+#sidebar {
+    height: calc( 100vh - 62px) !important;
+}
+
+#sidebar .nav-link {
+    color: #f8f9fa;
+}
+
+#sidebar .oi {
+    transition: .3s transform ease-in-out;
+}
+
+#sidebar .oi-chevron-left {
+    transform: rotate(-90deg);
+}
+
+#sidebar .collapsed .oi-chevron-left {
+    transform: rotate(0deg);
+}
