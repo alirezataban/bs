@@ -135,4 +135,35 @@ $(document).ready(function(){
                                     }
                                 }
                     })
+    let online=document.getElementById("online");
+    let onlinechart=new Chart(online,
+        {
+        type:'line',
+        data:{
+        labels:['شنبه','یک شنبه','دو شنبه','سه شنبه','چهار شنبه','پنج شنبه','جمعه'],
+        datasets:[{
+            data:[1533,1423,1800,1230,1100,1500,1523],
+            backgroundColor:'rgba(0,0,0,.4)',
+            borderColor:'#555',
+            borderWidth:3,
+            pointbackgroundColor:'#333'
+        }]
+        },
+        options:{
+            legend:{
+                display:false
+            }
+        }
+    })
+    $('#sidebar').on('hide.bs.collapse', function(e){
+if(e.target==this){
+    $('#main').removeClass('col-md-10');
+}
 })
+$('#sidebar').on('show.bs.collapse', function(e){
+    if(e.target==this){
+        $('#main').addClass('col-md-10');
+    }
+    })
+})
+

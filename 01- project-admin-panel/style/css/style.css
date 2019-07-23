@@ -4,11 +4,6 @@ body {
     font-family: Vazir;
     font-weight: 300;
 }
-
-#sidebar {
-    height: calc( 100vh - 62px) !important;
-}
-
 #sidebar .nav-link {
     color: #f8f9fa;
 }
@@ -24,3 +19,26 @@ body {
 #sidebar .collapsed .oi-chevron-left {
     transform: rotate(0deg);
 }
+span{
+    cursor: pointer;
+}
+@media(min-width:768px){
+    #sidebar{
+        /* height: calc(100vh-62px)!important; */
+        position: fixed;
+        transition: transform .5s linear;
+    }
+    #sidebar.collase{
+        transform: translate(100%,0);
+        }
+    #sidebar.collapse.show{
+        transform: translate(0,0);
+    }
+    #sidebar.collapsing{
+        transform: translate(100%,0);
+    }
+    #main{
+        transition: .5s all;
+    }
+}
+
